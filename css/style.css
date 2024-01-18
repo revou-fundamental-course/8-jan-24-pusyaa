@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+}
+
+.calculator-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #6BA5F2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-container h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Tambahkan margin bawah jika diperlukan */
+}
+
+.calculator-container .center-button {
+    text-align: center;
+}
+
+.calculator-container button {
+    /* Membuat tombol menjadi pusat secara horizontal dan vertikal */
+    display: block;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result-container {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Tambahkan margin bawah agar terlihat terpisah dari input */
+}
+
+.square-image-container img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Tambahkan aturan CSS untuk menempatkan rumus di atas input */
+.result-container p {
+    margin-bottom: 10px;
+}
+
+/* Tambahkan aturan CSS untuk mengubah tata letak pada media query kecil */
+@media screen and (max-width: 600px) {
+    .result-container p {
+        text-align: center;
+    }
+}
+
+.square-image-container img {
+    max-width: 40%;  /* Lebar gambar tidak akan melebihi lebar container */
+    height: auto;     /* Menjaga rasio aspek gambar */
+    display: block;   /* Menghilangkan spasi tambahan di bawah gambar */
+    margin: 0 auto;   /* Memusatkan gambar di dalam container jika perlu */
+    margin-bottom: 30px;
+}
+
+#calculator-form input {
+    width: 100%; /* Sesuaikan lebar input sesuai kebutuhan */
+    padding: 8px; /* Sesuaikan padding sesuai kebutuhan */
+    box-sizing: border-box; /* Membuat padding dan border termasuk dalam lebar total */
+}
+
+#calculator-form select {
+    margin-bottom: 30px;
+    width: 100%; /* Sesuaikan lebar input sesuai kebutuhan */
+    padding: 8px; /* Sesuaikan padding sesuai kebutuhan */
+    box-sizing: border-box; /* Membuat padding dan border termasuk dalam lebar total */
+}
+
+
+.input-container {
+    position: relative;
+}
+
+.warning-message {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+}

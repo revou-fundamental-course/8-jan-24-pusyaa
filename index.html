@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>Persegi Calculator</h2>
+
+        <div class="square-image-container">
+            <img src="http://2.bp.blogspot.com/_LjrDLx1Qcyc/TNEPh4ljj8I/AAAAAAAAAAM/WXuttgi9QyM/s320/persegi.jpeg" alt="Square Image">
+        </div>
+
+        <form id="calculator-form">
+            <label for="operation">Rumus Persegi:</label>
+            <select id="operation" onchange="changeOperation()">
+                <option value="luas">Luas Persegi</option>
+                <option value="keliling">Keliling Persegi</option>
+            </select>
+
+            <div id="inputContainer">
+                <label for="sideLength">Panjang Sisi:</label>
+                <input type="number" id="sideLength" required>
+            </div>
+            
+            <button type="button" onclick="calculate()">Hitung</button>
+
+            <div class="result-container">
+                <p id="resultLabel"></p>
+                <p>Hasil = <span id="resultValue"></span></p>
+            </div>           
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
